@@ -15,8 +15,8 @@ export const Button = styled(RectButton)`
 `;
 
 export const IconeGoogle = styled.Image`
-    width: ${RFValue(45)}px;
-    height: ${RFValue(45)}px;
+    width: ${RFValue(25)}px;
+    height: ${RFValue(25)}px;
 `;
 
 export const Title = styled.Text`
