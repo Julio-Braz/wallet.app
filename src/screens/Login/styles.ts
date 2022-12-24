@@ -27,6 +27,7 @@ const Title = styled.Text`
 const Description = styled.Text`
     margin-top: ${RFValue(60)}px;
     font-size:${RFValue(15)}px;
+    margin-bottom: ${RFValue(15)}px;
     font-family:${({ theme }) => theme.FONTS.POPPINSLIGHT}
 `;
 const ViewButton = styled.View`

@@ -1,49 +1,55 @@
 import React from "react";
 
-import { SafeAreaView,  } from "react-native";
+import { SafeAreaView, } from "react-native";
 
-import { Container,
-        ContentHeader,
-        ContentBody,
-        ContentFooter,
-        Title,
-        Description,
-        ViewButton,
+import {
+    Container,
+    ContentHeader,
+    ContentBody,
+    ContentFooter,
+    Title,
+    Description,
+    ViewButton,
 
-    } from "./styles";
+} from "./styles";
+import {Input} from '../../components/Input/Input'
+import { ButtonSocialGoogle } from '../../components/ButtonSocialGoogle/ButtonSocialGoogle'
+import { ButtonSocialFacebook } from '../../components/ButtonSocialFacebook/ButtonSocialFacebook'
 
-import {ButtonSocialGoogle} from '../../components/ButtonSocialGoogle/ButtonSocialGoogle'
 
-export  function Login(){
-    return(
+export function Login() {
+    return (
         <SafeAreaView>
-        <Container>
+            <Container>
 
-           <ContentHeader>
+                <ContentHeader>
 
-                <Title>Seja Bem vindo(a) {'\n'} Wallet app</Title>
+                    <Title>Seja Bem vindo(a) {'\n'} Wallet app</Title>
 
                     <Description>Sign Up</Description>
 
-                <ViewButton>
-                <ButtonSocialGoogle title='Google'/>
+                    <ViewButton>
+                        <ButtonSocialGoogle title='Google' />
+                        <ButtonSocialFacebook title='Facebook' />
 
 
-                </ViewButton>
-            </ContentHeader>
+                    </ViewButton>
+                </ContentHeader>
 
-            <ContentBody>
+                <ContentBody>
+                    <Input/>
 
-            </ContentBody>
+                </ContentBody>
 
-            <ContentFooter>
+                <ContentFooter>
 
-            </ContentFooter>
-{/*
+                </ContentFooter>
+                {/*
             <TextInput placeholder='username'></TextInput>
             <TextInput placeholder='passsword'></TextInput> */}
 
-            {/* <Text>Welcome Back to Mabank </Text> */}
-        </Container>
+                {/* <Text>Welcome Back to Mabank </Text> */}
+            </Container>
         </SafeAreaView>
-)}
+    )
+}
